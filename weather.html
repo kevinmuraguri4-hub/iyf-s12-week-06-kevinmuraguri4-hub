@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Weather Dashboard | Week 6</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="topbar"><a class="brand" href="index.html">JavaScript Lab</a><span>Weather Dashboard</span></header><main class="container">
+<a class="back" href="index.html">← Back to home</a><div class="page-heading"><p class="eyebrow">Mini-project</p><h1>Weather Dashboard</h1><p>Search for a city to see its current weather.</p></div>
+<section class="panel"><form id="search-form" class="form-row"><label class="hidden" for="city-input">City name</label><input id="city-input" type="text" placeholder="Enter a city, e.g. Nairobi" maxlength="80" required><button type="submit">Search weather</button></form>
+<p id="loading" class="status hidden" role="status">Loading weather data…</p><p id="error" class="error hidden" role="alert"></p>
+<div id="weather-display" class="hidden"><div class="weather-main"><h2 id="city-name"></h2><img id="weather-icon" alt=""><p id="temperature" class="temperature"></p><p id="description"></p><button id="unit-toggle" class="secondary" type="button">Show °F</button></div>
+<div class="weather-details"><div class="detail"><span>Feels like</span><strong id="feels-like"></strong></div><div class="detail"><span>Humidity</span><strong id="humidity"></strong></div><div class="detail"><span>Wind</span><strong id="wind"></strong></div><div class="detail"><span>Pressure</span><strong id="pressure"></strong></div></div></div></section>
+<section class="panel"><h2>Recent searches</h2><p class="muted">Your last five successful searches are saved in this browser.</p><ul id="search-history" class="history"></ul></section>
+<p class="info">If you see an API-key message, create config.js from config.example.js and add your own OpenWeatherMap key. New keys may take some time to activate.</p></main>
+<script src="config.js"></script><script src="app.js" defer></script></body></html>
