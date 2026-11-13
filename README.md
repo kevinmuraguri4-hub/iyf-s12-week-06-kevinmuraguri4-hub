@@ -1,1 +1,1 @@
-# iyf-s12-week-06-kevinmuraguri4-hub
+# Week 6: Asynchronous JavaScript
