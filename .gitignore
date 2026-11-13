@@ -1,0 +1,6 @@
+# Keep personal API credentials out of Git history
+config.js
+node_modules/
+.vscode/
+.DS_Store
+Thumbs.db
